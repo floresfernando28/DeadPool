@@ -1,0 +1,271 @@
+/* Importamos el tipo de letra que usaremos en la pagina web, desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Corinthia&family=Crete+Round&family=Dongle:wght@700&family=IBM+Plex+Sans+Thai+Looped:wght@200&family=Merriweather:wght@300&family=Montserrat:wght@400;500;700&family=Roboto:wght@100&family=Slabo+13px&family=Ubuntu+Mono:wght@700&family=Ubuntu:wght@500;700&display=swap');
+/* Estilos a toda la pagina */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Corinthia&family=Crete+Round&family=Dongle:wght@700&family=IBM+Plex+Sans+Thai+Looped:wght@200&family=Merriweather:wght@300&family=Montserrat:wght@400;500;700&family=Roboto:wght@100&family=Rubik:wght@500&family=Slabo+13px&family=Ubuntu+Mono:wght@700&family=Ubuntu:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos al body */
+
+body {
+    font-size: 16px;
+    font-family: 'ubuntu', sans-serif;
+}
+
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(personajes/dead--2.jpg);
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: space-between;
+
+}
+.caja1 {
+    color: rgb(168, 159, 159);
+    margin: auto 0;
+    margin-left: 70px;
+
+}
+
+.caja1 .elemento1 {
+    font-size: 2.4em;
+    font-weight: 500;
+    margin: 3px;
+}
+.caja1 .elemento2 {
+    font-size: 3em;
+    color: crimson;
+    font-weight: 700;
+    margin: 3px;
+
+}
+.elemento2 p {
+    position: relative;
+    display: inline-block;
+}
+
+.elemento2 span {
+    position: absolute;
+    width: 0;
+    right: 0;
+    background-color: #000;
+    animation: fernando 7s alternate infinite steps(17);
+    border-left: 2px solid crimson;
+}
+.caja1 .elemento3 {
+    font-size: 2.4em;
+    font-weight: 500;
+    margin: 3px;
+}
+.elemento4 {
+    margin: 3px;
+    margin-top: 30px;
+}
+.caja1 .elemento4 a {
+    text-decoration: none;
+    color: crimson;
+    font-size: 1.3em;
+    font-weight: 500;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    padding: 12px;
+    transition: 2s ease;
+
+}
+
+.elemento4 a:hover{
+    color: #fff;
+    background-color: crimson;
+}
+
+@keyframes fernando {
+    where{
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+.caja2 {
+    /* border: 2px solid crimson; */
+    height: 350px;
+    margin: auto 0;
+    margin-right: 40px;
+}
+
+.caja2 form {
+    /* border: 2px solid #111 */
+    text-align: center;
+    width: 500px;
+    max-width: 400px;
+    margin:auto;
+    background: url(personajes/dead-5.jpg);
+    padding: 30px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.caja2 h1 {
+    color: rgb(168, 159, 159);
+    font-size: 1.5em;
+    font-weight: 100;
+    padding-bottom: 10px;
+
+}
+
+.caja2 h1 {
+    position: relative;
+    display: inline-block;
+}
+
+.caja2 span {
+    position: absolute;
+    right:0;
+    width: 0;
+    border-left: 2px solid crimson;
+    animation: fer 7s alternate infinite steps(20);
+    background-color: #000;
+}
+
+.caja2 form input, textarea {
+    margin: 10px;
+    width: 350px;
+    outline: none;
+    border: none;
+    border-style:groove;
+    border-color: rgba(241, 45, 45, 0.2);
+    background-color: none;
+    padding: 12px;
+    font-family: 'ubuntu', sans-serif;  
+    font-size: 1em;
+    color: white;
+    background: #000;
+}
+::placeholder {
+    color: rgb(168, 159, 159);
+    font-size: 1em;
+    font-family: 'ubuntu', sans-serif;    
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(48, 8, 8);
+    transition: 0.8s ease;
+    cursor: pointer;
+
+}
+
+.header p {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 2.2em;
+}
+.header span {
+    color: crimson;
+
+}
+
+
+
+@keyframes fer {
+    where{
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@media (max-width: 960px ){
+    .caja1 {
+        width: 500px;
+        text-align: center;
+        margin: auto;
+    }
+    .caja2 {
+        width: 500px;
+        text-align: center;
+        margin: 20px auto 40px auto;
+    }
+    
+    .caja2 form input, textarea {
+
+        width: 459px;
+
+    }
+
+}
+@media(max-width:600px){
+    .caja1 {
+        margin-left: 45px;
+        text-align: center;
+    }
+    .elemento1 p, .elemento3 p {
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .elemento2 p {
+        font-size: 44px;
+    }
+    .caja2 h1 {
+
+        font-size: 1.3em;
+        font-weight: 300;
+        padding-bottom: 12px;
+    
+    }
+
+
+    .caja2 {
+        text-align: center;
+        height: 300px;
+        margin:  15px auto;
+        margin-right: 40px;
+        /* padding: 0; */
+    }
+
+    .caja2 form input, textarea {
+        margin: 10px;
+        width: 300px;
+
+    }
+}
+
+@media (max-width: 550px){
+    body{
+        font-size: 13px;
+    }
+    .caja1 {
+        width: 500px;
+        text-align: center;
+        margin: auto;
+    }
+    .caja2 {
+        width: 500px;
+        text-align: center;
+        margin: 20px auto 40px auto;
+    }
+}
+
+@media (max-width: 400px){
+    .caja2 form input, textarea {
+        margin: 10px 0;
+        width: 250px;
+
+    }
+
+}
+

@@ -1,0 +1,240 @@
+/* Estilos alas cajas de los personajes */
+.personajes {
+    width: 100%;
+    padding: 0px 0px 40px 0 ;
+}
+.personajes-contenedor {
+    width: 97.3%;
+    background-color: crimson;
+    color: white;
+    padding: 18px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    /* font-weight: 30; */
+    border-radius: 5px;
+}
+.personajes-contenedor h1 {
+    position: relative;
+    display: inline-block;
+}
+.personajes-contenedor span {
+    position: absolute;
+    width: 0;
+    right: 0;
+    background: crimson;
+    border-left: 2px solid white;
+    animation: ferna 8s alternate infinite steps(11);
+}
+
+/* Animación para el titulo (personajes Principales) */
+
+@keyframes ferna {
+    where {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+.contenedorr {
+    width: 100%;
+    margin: auto;
+    padding: 70px 52px 70px 52px ;
+    background-color: #111;
+}
+.contenedor-cajas {
+    width: 100%;
+    background: #111;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caja {
+    width: 384px;
+    height: 550px;
+    margin: 22px 15px;
+    background-color: crimson;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+.caja img {
+    width:100%;
+    object-fit: cover;
+    height: 60%;
+    border: 15px solid crimson;
+    border-bottom: none;
+    border-radius: 25px;
+}
+.caja p {
+    color: white;
+    text-align: center;
+    font-size: 21px;
+    padding: 15px;
+    background-color: crimson;
+    font-weight: 300;
+    
+}
+
+.caja .p-modificado {
+    padding: 0 15px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.caja:hover {
+    border: 2px solid white;
+    opacity: 0.7;
+
+}
+
+.contenedor-footer {
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+    text-align: center;
+
+}
+
+.contenedor-footer p {
+    color: crimson;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+.contenedor-footer span {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+
+
+/* Los Responsive */
+
+
+@media(max-width: 1300px){
+
+    .caja {
+        width: 460px;
+        margin: 15px auto;
+
+    }
+    .caja img {
+        height: 60%;
+    }
+    .personajes-contenedor {
+        width: 88%;
+    }
+
+
+}
+
+
+@media(max-width: 1050px){
+
+    .caja {
+        width: 380px;
+        margin: 15px auto;
+
+    }
+    .caja img {
+        height: 60%;
+    }
+    .personajes-contenedor {
+        width: 91%;
+    }
+
+
+}
+
+
+@media(max-width: 960px){
+    .contenedorr {
+        width: 100%;
+        margin: auto;
+        padding: 70px 33px 70px 33px ;
+
+    }
+    .caja p{
+        font-size: 16px;
+    }
+    .caja {
+        width: 330px;
+        height: 490px;
+        margin: 22px auto;
+
+    }
+    .caja img {
+        height: 50%;
+    }
+    .personajes-contenedor {
+        width: 95%;
+
+
+        padding: 10px;
+        margin: 0 auto;
+        font-size: 15px;
+        /* border-radius: 10px; */
+    }
+    .personajes {
+        width: 100%;
+        padding: 0px 0px 10px 0 ;
+    }
+    .contenedor-footer p {
+        font-size: 18px;
+        font-weight: 200;
+    
+    }
+    .contenedor-footer span {
+        font-size: 18px;
+        font-weight: 200;
+    
+    }
+
+}
+
+
+
+
+@media(max-width: 540px){
+
+    .caja {
+        width: 450px;
+        height: 520px;
+
+    }
+    .caja img {
+        height: 50%;
+    }
+
+}
+
+
+@media(max-width: 515px){
+
+    .caja {
+        width: 330px;
+        height: 520px;
+
+    }
+
+}
+
+
+@media(max-width: 300px){
+
+    .caja {
+        width: 330px;
+        height: 600px;
+        margin: 22px auto;
+
+    }
+    .caja img {
+        height: 40%;
+    }
+
+
+}
+

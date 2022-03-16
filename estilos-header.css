@@ -1,0 +1,403 @@
+/* Importamos el tipo de letra que usaremos en la pagina web, desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Corinthia&family=Crete+Round&family=Dongle:wght@700&family=IBM+Plex+Sans+Thai+Looped:wght@200&family=Merriweather:wght@300&family=Montserrat:wght@400;500;700&family=Roboto:wght@100&family=Slabo+13px&family=Ubuntu+Mono:wght@700&family=Ubuntu:wght@500;700&display=swap');
+/* Estilos a toda la pagina */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Corinthia&family=Crete+Round&family=Dongle:wght@700&family=IBM+Plex+Sans+Thai+Looped:wght@200&family=Merriweather:wght@300&family=Montserrat:wght@400;500;700&family=Roboto:wght@100&family=Rubik:wght@500&family=Slabo+13px&family=Ubuntu+Mono:wght@700&family=Ubuntu:wght@500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos al body */
+
+body {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Estilos principales al header que contine las cajas principales */
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    padding: 25px 60px 25px 49px;
+    /* transition: 0.7s; */
+    z-index: 100;
+}
+/* Estilos al padre que contiene los dos hijos
+   al div y el ul (hijos del contenedor) 
+*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1527px;
+    margin: 0 auto;
+}
+
+/* Estilos al container-1 ( hijo 1 container principal) */
+
+.container-1 a{
+    text-decoration: none;
+    font-size: 2.4em;
+    font-weight: 600;
+    color: crimson;
+    -webkit-text-stroke: 1.5px crimson;
+    letter-spacing: 1px;
+}
+
+/* Estilos al container-2 (hijo del contenedor principal) */
+
+.container-2 {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos a los hijos del container-2 */
+
+.container li {
+    list-style: none;
+}
+
+.container li a {
+    text-decoration: none;
+    color: crimson;
+    font-size: 1.5em;
+    font-weight: 800;
+    margin: 0 4px 0 20px;
+    transition: ease-in-out 0.4s;
+}
+
+.container-2 .a-modificado {
+    color: rgba(0,0,0,0.4);
+    font-weight: 1000;
+} 
+.container-2 .a-modificado:hover {
+    border: none;
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.2);
+}
+
+.container li a:hover {
+    border: 2px solid crimson;
+    padding: 10px 15px;
+}
+
+/* Estilos ala seccion 1 */
+
+
+.container-secundario {
+    background-image:url(imagenes/deadpool-15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-secundario-3 {
+    display: inline-block;
+    margin-top: 4px;
+
+}
+.container-secundario-3 a:hover{
+    background-color: crimson;
+    color: white;
+    transition: 2s ease;
+}
+.container-secundario-3 a {
+    font-family: 'ubuntu', sans-serif;
+    border: 2px solid crimson;
+    padding: 10px;
+    border-radius: 5px;
+    color: crimson;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+
+
+/* Estilos alos hijos del contenedor-relative */
+
+.container-relative {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.container-absolute {
+    position: absolute;
+    left: 127px;
+    top: 250px;
+}
+
+
+/* Estilos a los container hijos del container absolute */
+
+.container-secundario-1{
+    color: rgba(0,0,0,0.5);
+    margin: 5px;
+    font-size: 2em;
+
+
+
+}
+
+.container-secundario-1 span , .container-secundario-2 span{
+    color: crimson;
+
+}
+.container-secundario-2 {
+    color: rgba(0,0,0,0.5);
+    font-weight: 500;
+    margin: 5px;
+    font-size: 3em;
+}
+
+.container-secundario-3 {
+    margin-left: 6px;
+    margin-top: 20px;
+}
+.container-secundario-3 button {
+    font-family: 'ubuntu', sans-serif;
+    width: 150px;
+    height: 60px;
+    color: crimson;
+    border: 2px solid crimson;
+    font-size: 1.5em;
+    background: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: ease 2s ;
+}
+
+.container-secundario-3 button:hover {
+    background: crimson;
+    border: 2px solid crimson;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* FINALIZAMOS LA PARTE DEL HEADER Y IMAGEN DE FONDO PRINCIPAL */
+.scroll {
+    background: crimson;
+    box-shadow: 0px 0px 100px 0px  rgba(0,0,0,0.6);
+
+}
+header.scroll{
+    padding: 15px 60px 15px 49px;
+}
+
+
+header.scroll .container ul a {
+    font-family: 'ubuntu',sans-serif;
+    color: white;
+}
+header.scroll .container-1 a{
+    color: white;
+    font-weight: 600;
+    -webkit-text-stroke: 0px white;
+}
+
+header.scroll .container-2 a:hover{
+    transition: none;
+    border-bottom: 3px solid white;
+    box-shadow: none;
+    padding: 7px;
+}
+
+/* Agregamos pequeña animacion al container-1 hijo del conatiner principal */
+
+header.scroll .container-1 a {
+    position: relative;
+}
+header.scroll .container-1 span {
+    position: absolute;
+    width: 0%;
+    right: 0;
+    border-left: 3px solid white;
+    animation: Animacion-deadpool 5s infinite alternate steps(20);
+    background: crimson;
+}
+
+
+/* Animacion echa al logo de la pagina (DEADPOOL) */
+
+@keyframes Animacion-deadpool {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+
+/* Estilos al menu */
+/* Para que se desaparezca en modo laptop y luego aparecerlo en modo movil */
+.menu {
+    display: none;
+    font-size: 1.1em;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Comenzamos con los media querys, asiendo el encabezado totalmente responsive */
+
+@media (max-width:1527px) {
+    .container-1 a {
+        margin-left: 40px;
+    }
+    .container li a {
+        margin: 0 4px 0 15px;
+        padding: 5px;
+    }
+    .container-secundario-1, .container-secundario-2, .container-secundario-3 {
+        margin-left: -37px;
+    }
+
+}
+
+@media (max-width: 1300px){
+    .container-absolute {
+    position: absolute;
+    left: 127px;
+    top: 250px;
+}
+@media (max-width: 990px ) {
+
+    .menuP {
+        z-index: 100;
+    }
+
+    .container .container-2 {
+        padding-top: 100px;
+        position: fixed;
+        left:-100%;
+        top:0;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,1);
+        transition: 0.5s ease;
+        overflow-y:auto;
+
+    }
+
+    .container-2.active{
+        transition: .5s ease;
+        left: 0;
+    }
+
+    .container .container-2 li {
+        margin: 30px;
+    }
+    .container .container-2 li a ,.a-modificado{
+        font-family: 'ubuntu', sans-serif;
+        font-weight: none;
+        color: white;
+        -webkit-text-stroke: 0px white;
+    }
+    .container .container-2 li a:hover {
+        color: crimson;
+        transition: 0.3s ease;
+        -webkit-text-stroke: white;
+        border: none;
+
+    }
+    .container-secundario {
+        background-image:url(imagenes/deadpool-21.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .container-secundario-1 , .container-secundario-2 {
+         color: white;
+    }
+
+    .menu {
+        display: block;
+        align-self: flex-end;
+        font-size: 2em;
+    }
+    .container-1 span {
+        color: white;
+        -webkit-text-stroke: white;
+    }
+    /* .menuP i.active:before{
+        content:"\f00d";
+    } */
+
+}
+@media (max-width: 1100px) {
+    .container-absolute {
+        left: 94px;
+        top: 100px;
+    }
+}
+@media (max-width: 1050px) {
+    .container-absolute {
+        left: 132px;
+        top: 100px;
+    }
+}
+@media (max-width: 1280px) {
+    .container-absolute {
+        /* left: 94px; */
+        top: 300px;
+    }
+}
+@media (max-width: 300px) {
+    .container-absolute {
+        left: 94px;
+        top: 220px;
+    }
+
+    .container-1 a {
+        font-size: 2em;
+    }
+    .container-secundario-1{
+        font-size: 1.5em;
+    }
+    .container-secundario-2 {
+       font-size: 2em;
+    }
+
+}
+@media (max-width: 700px){
+
+    .container-absolute {
+        position: absolute;
+        left: 80px;
+        top: 265px;
+    }
+    header {
+        padding: 25px 20px 25px 4px;
+        /* transition: 1s; */
+        z-index: 100;
+    }
+    .container-1 a{
+        font-size: 2em;
+    }
+    header.scroll{
+        padding: 18px 20px 18px 4px;
+    }
+    .menu {
+        padding-right: 17px;
+    }
+
+    
+}
+
+@media (max-width: 300px) {
+    body {
+        font-size: 10px;
+    }
+}
